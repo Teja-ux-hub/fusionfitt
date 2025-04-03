@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed; /* Ensure the header stays fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Keep it on top of other content */
+  backdrop-filter: blur(10px); /* Add a blur effect for transparency */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid orange; /* Active link styling */
+}
+
+/* Optional: Add some transition effects */
+.header img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar a {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: orange;
+}
